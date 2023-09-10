@@ -1,0 +1,277 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="GetFile" sap:VirtualizedContainerService.HintSize="799,5474" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="56">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="696,5409" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="634,101" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Abrir Newcon&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios" sap:VirtualizedContainerService.HintSize="634,340" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,114" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="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" InformativeScreenshot="b31d26d7ae61468c2541ab20502ad6a3.jpg" Selector="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" Url="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Windows Security" sap:VirtualizedContainerService.HintSize="634,1121" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="57559bee-78c1-4138-ac9a-7cc891122671" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,822" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'User name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,226" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="57559bee-78c1-4138-ac9a-7cc891122671" Text="andrade_cicero" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="85, 117, 296, 32" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'User name'" FullSelectorArgument="&lt;ctrl automationid='EditField_1' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='EditField_1' role='editable text' /&gt;" Guid="24bc31e1-f312-49c3-ba70-b786c3293792" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASwAAAAkCAYAAAAzWQesAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIVSURBVHhe7djLbcJQFIRhl51WqIAKqIAG2GXD2qypgGgcJjk6uSYJvlg+0v9JI8D3ZRYekQzjON4IIaRCKCxCSJl8Fdbw9k4IIZtMs7AAYGsoLABlUFgAyqCwAJRBYQEog8ICUMbThTUMw/0dAKyDwgJQBoUFoAwKC0AZFBaAMhYV1uFwuJ1Op/uVb9fr9bbb7aZXAOiFwgJQBoUFoIzVCkufnePxeL/6aW7scrlM187n8/Sq81r2+/00R6/eR58jrfWYEvl7xDm6d5+vaO8szm+NA+hrlcJyoVhco3lxTHM97sLQOY+4qHyeC860TzxTpRj3dPFonmg8nxvvSzQWyzXvCaC/VQorlkGktfGhF/9SEheW95mTy0TmzhRd9xmSy8fnxvUa95y8XvJ3BtDfKoWlOfqcf4GoAHQ9JxfWbzQ//wmYr3mvGMvfo1U+Gvf9+xdcKxQW8DovLaxM83Xda1RYrfXWq7BcjJb3faaw/B7AehYVVnyIo0cPtH+dyNx661VYeq+9LN6D6B7+U1h/vS8AfS0qLD/YrYc9Foj/9yO6rgKR1nqVgdf2LKx4hvaM+/63sER75rKN3xNAf4sKS/xwx8RfM5LHo9Z661VY3sfJ+z5TWKIz8r4AXmdxYQHAWigsAGVQWADKoLAAlPF0YQHA2igsAGVQWADKoLAAlDFbWIQQssX8KCxCCNl6KCxCSJGMtw/VxTcwlEnZNwAAAABJRU5ErkJggg==" InformativeScreenshot="50614ac7c79f024477efe607b53b5011.png" ScopeSelectorArgument="&lt;wnd app='credentialuibroker.exe' cls='Credential Dialog Xaml Host' title='Windows Security' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="338,226" sap2010:WorkflowViewState.IdRef="NTypeInto_2" IsPassword="True" ScopeIdentifier="57559bee-78c1-4138-ac9a-7cc891122671" Text="Ci15ro04an99%%" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="85, 161, 296, 32" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FriendlyName="'Password'" FullSelectorArgument="&lt;ctrl automationid='PasswordField_2' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='PasswordField_2' role='editable text' /&gt;" Guid="2da4e144-0c0b-4cea-8b61-3f01d9de3e4d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASwAAAAkCAYAAAAzWQesAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJQSURBVHhe7dfNjSIxFEXhCZUgWBEBORADKRACGbBlTQaMzki39cZtesNP1WudxSdwlW2qF3Xk/nO9Xu+S1IHBktTGV7B2u50krdI0WLfbTZJWxWBJasNgSWrDYElqw2BJasNgSWrDYElqw2BJasNgSWrDYElqw2BJauOpYB0Oh/tms/nP6XSazu3seDze9/v99J6kz3k6WMj4fD7/ymgZLGkdXhos/MaX22BJ6/DWYOXEFdyrc5mXe9vt9us6J7S6jn1YW+eAcd2TdT/tMz4rc+ucy+Xy7zp75lp+w2BJy3t5sOq1+pITAwJAfMZ5SHgSuVxnjKxPVDKuv8F+2SfRyT0Qn/qbjOueGNfleQyWtLyXBiunlRqAipeeOfmeuFTjKanKiYjvrB3jwv0Ekev5HolPxswfn2G2jr/RYEnLezpYvODVOIcXvd5PIBKP2ZqcfBKnqIFkX/bIZ05c3KvfR1xPUGsA8Wgdz2ywpOW99IRV5eWvJxhe+vFEw5h5YxCyvgaGMBEZvueT9SA8eZZH4UHdz2BJvbwtWIRgfMkJxBgsJBTjv2Jgj/obzKtxyimLcY3PbD/GNUhjsDBbx/4GS1reW4NV45CTVIJV1yVYfLKuBoNQ1MgxHkPDWq7l5IT8XsYYgzkLFs/F9YzzdxgsaXlvCxZ4yXnZQShqfOo9JFIJRIz7z0KUiNVryNyoscIsWKjPxu/n2cd5kj7rqWBJ0icZLEltGCxJbRgsSW0YLEltGCxJbRgsSW0YLEltPAyWJK3Rt2BJ0toZLElNXO9/AcXOX/ny6ujcAAAAAElFTkSuQmCC" InformativeScreenshot="d562a38a646c8f6390565607984e3367.png" ScopeSelectorArgument="&lt;wnd app='credentialuibroker.exe' cls='Credential Dialog Xaml Host' title='Windows Security' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="57559bee-78c1-4138-ac9a-7cc891122671" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="25, 257, 201, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;ctrl automationid='OkButton' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='OkButton' role='push button' check:text='OK' /&gt;" Guid="41da32dc-fa58-4239-a9bf-2db88aa780bb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM0AAAAkCAYAAAAq974jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFUSURBVHhe7djBjcIwEEDRtEEdtEEXVEER1JA2qChtZDUreeWYKDArYXN4h3fANsevcTwty7IC7xMNJP1F83g8gAOigSTRQJJoIEk0kCQaSBINJIkGkkQDSaKBJNFAkmi+wOVyWadp2mjP3G639XQ6Pa3F2ev1ulnns0QzWIRwPp83ayWG+/2+Waujmef590yslzX6EM1AMWHaYIo2kva3CTOOaAZqp0mr3q+jidAiuPos/YhmkIghotjbKyKOMk1KNEfTiT5EM0hEU1+39rTRRGSvphOfJ5pB/jtpSjzxENCepw/RDFJev46mRr1ff9OUJ+r6LP2IZqCj75OYMPX1rY4mxP9eXe/4DNEMFhOjDSeCaa9gbTQhznhF6080XyCiiQCKvQmyF0254pk4fYkGkkQDSaKBJNFAkmggSTSQJBpIEg0kiQaSRANJT9EA7xENpCzrD4WPXFqeVJiTAAAAAElFTkSuQmCC" InformativeScreenshot="f5a943443a001bcacb00271f63b0d4f6.png" ScopeSelectorArgument="&lt;wnd app='credentialuibroker.exe' cls='Credential Dialog Xaml Host' title='Windows Security' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Windows\System32\credentialuibroker.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ9SURBVFhH7ZfbU1tVFMYzffDF6av/gDP+Fb5jbbWWcmmh15RWqTN0KgUBgZJA7gGaBqiU0BAuIRACxWq1WF9rIfWhT/pU3/AFyO3k5Aqfa52TyymelItOfNA9880+7L3Z32+tvc7JOZr/27/eLHZHp67PjHKqz2jTkfVbpCMak8W289urdbz89XfSq39Un7U7VHuGIPN3JAizdUD8eTWIv6PVtRdYC/6CtReyVun6OY2x1NbnAN4lva2hdIixeALpVBKpZOIQkv8vqaLda9lDTGXyAO+RjhKAVeTBcuovAJlsVppYWXmGpz+93JdWfnyGbCYtKRgMqiof+fvXJyTxtSpANgfAG1d1LaC624+annnU6udwxuDDWZMP9TYv6vtncN4xhQvOSWntH+vrSCXiBaNSOhDAZfMytNaH0NqW0DCwiKuOAK45F/DpyDwaR+dw3eXD5+5ZBYCgGj1rXwD8x7YCoMn5HZqGv8WNe49w8z7JtYxm90Pc8iyhZXoRrd4A2ub8BYA0AfDGyaQo9wm5V4rNK3qHpWtVAEGUJ3jTtvEn6HD/gA7P9+icfowvyPyG24/GcS+ujLmhdY2jYcJVBBDjqtGz8gBsfuqerTRAVBALAHrvU9yeeYKGIR9OmsfwgXEIH1rv4kS/Ax/dGcRJZz9OjdgUALkMUOTS7cf9riywef1Mz/4Amh98gxOGUVT0DeOY2YnjNjIfuIOP7w7gk2G7tNnp+xYFQEw1elYegM0bHzeVBogpACr0I3LUFjIvRE3mI3ZUfm3F6TEzqh8YiwBUA0l6GCXoKPKGu8XmbwaIFwGOmXIp56gdZD5EKaeoK0ctqHKZUOM24IyntwCQoiNQi551AAB5gjc9bqeoBxUp56gp5dXjJtRO9OHspB51lNICQFw40GN8TwBloVWOWlFFKa+hlNd6yHxKR+d5G+d9XUUAOgK16FmHAlAWWnU+5ZO9qJvuwTlvNy7MdeKSv/01gFTuDlAz3K09AZSFJqV8Si9HPduFi/Nf4dJCO7SLrQWABNUAF6DaA4jHRJqLRqMIh8OIhEN7AygLrW5aR1Fzyjtx0d+By4E2XFlqRcPyrQJA8g23YTJB+xJgJBJGKBRCOLRVAkDxJFQW2rlZTjlFTSnXBr4k8xZcXW7GtUc3FQBR1ejzGYhTkXLkm5ub2NraVAeIi/KLwuTUorTxfjThCchHQAZq0bPigoBYNELGWzIASRUgEpMzwL/tvOlBFI8VM8A914MgxBClcT53jnpjY0NSSYBQNAH+ScZ2CumkACANZGksFUeGhO0kje2Qtkm0jueRwk5GLjI2ls1FCJSRGJlHKfIwnT2ff16cjZIAPFEuvQbA7+jdOkOCBw+jXqMVRosdFvsgTNZBGEw26FXWKdXc0j5E5vJbMTX+QOB3dB5gqnKIveTvAmpHchdMc7RMYi/5y+g/3jSaPwH2G61IeD/6MgAAAABJRU5ErkJggg==" InformativeScreenshot="8ecfce9c2ebfb3a4c4cd73674726dc7a.png" Selector="&lt;wnd app='credentialuibroker.exe' cls='Credential Dialog Xaml Host' title='Windows Security' /&gt;" Title="Windows Security" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios" sap:VirtualizedContainerService.HintSize="634,3605" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="600,3339" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'DT ENCERRAMENTO INICIAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="538,226" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="[now.tostring(&quot;dd/MM/yyyy&quot;)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="150, 86, 167, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl parentname='ParameterTable_ReportViewerControl_ctl04' tableCol='2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='ParameterTable_ReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='DT ENCERRAMENTO INICIAL' /&gt;" Guid="85633334-62b4-4ed8-98b0-b4b04e79e953" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAYCAYAAACFtg3CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dKxCcAwEMDATO31ncqGFOlfcAfaQM+GCLOScWdda0kjOz6zwjRmJcOsZJiVDLOSYVYyzEqGWckwKxlmJcOsZJiVDLOSYVYyzEqGWckwKxlmJeN3Vmlix50VpjMrEXu/sLSRbm7vqHcAAAAASUVORK5CYII=" InformativeScreenshot="0c6b9046a49263d0f3f4f8065ba3d1de.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="11, 89, 134, 15" ElementType="Text" FriendlyName="'DT ENCERRAMENTO INICIAL'" FullSelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='' check:innerText='DT ENCERRAMENTO INICIAL' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIoAAAATCAYAAABP7pXvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALxSURBVGhD7ZbtjfQgDIS3w5SVUtLA9ZBSUkbOgwMeG5NFp/f9xyOttIth/MEkd597sZhgGWUxxTLKYopllMUUyyiLKZZRFlOYUa7j3j6f+0Of/UTgvPewbjHj3JN40dzu49I9ynUf2y6qhj+r+8d6tN6KCDVuh2TxFL1QdLZW4Lpjzkc7PXvu9yaHrmOz/eFcjGF/xrnXuWlvfSqKh35jDpzFmtfAPfT5TdfjjeKUtEAWGomANCaa+y7Dc42wUfJiwUjPatSz+tMPC5foNdHLJnV4TeTYgmmBDvrZ281FOaWvXfL4kalRGuFs0e1m8a1/qR25PvHhonjoPTN/ZxTUJvPYhrqeF6MIWCOhkQhIY4+mvzgyigw2faKFN70KmlddP6xOl550vhRc9hkv99E6av5sLkKp7/TzqXka7qya1aUqYN1fFrD+tZ4TJqM6Yrx8RT6eAxGNUn/jbng9nbvwbhS+VGEkAoqT2+vu2dc0eUimGYtk3vUAdKomDQu/Rs2HQeq6vygbIJ1pdcjnEa5x7G8X+GaUkNvgPgybde0N+6yvPq61eNMb3ih0r+GhMl3PPzRKEmPNVpBpvhtloBfNU8Bl22V6TTaRv5Saw4bItT370rlwfaT5X40ikEYWnzaK6wmz+37H3//0UHMjEZDGgqYawy7jrbFvejhrTwINE4akmss+MhE+NWfLUfuki3axOBfB1ZecL7iz/kKMfN30qTehziyNt4exh43i39b6sRj1RYyNgt8kAEYiII11Q8ZQpNH2lsJvn+M69qIzo2dvpHyY8i15WpFT83MOfOd/dlus60GJ9ZWccn5sFN3zp39muzNcK8cTPTEPSjCjWP8N1PloxL4q3ijkMP9qV0YiILq0FJsNGa53haLwcA6rU3o4i5qyYYqJfmwATDWY6ydot1g3l95kSnJJSf/FLKQXx1Mx/dibUGoaxbWOluNJ0IySvnXUfNCLc69bzSiLxQvLKIspllEWUyyjLKZYRllMcN+/TnKl9fBgRekAAAAASUVORK5CYII=" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'DT ENCERRAMENTO FINAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="538,226" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="[now.tostring(&quot;dd/MM/yyyy&quot;)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="497, 86, 167, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl parentname='ParameterTable_ReportViewerControl_ctl04' tableCol='7' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='ParameterTable_ReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='DT ENCERRAMENTO FINAL' /&gt;" Guid="4077eade-b6bf-4afc-b3a2-1021f1f16703" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAYCAYAAACFtg3CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQpSURBVHhe7ZtNaxtXFIb7J/oHJu1qEIVispYR3sT1WiGIUrpwVeOo/hgZdZUu2kUKKaEJOJQsQgLOYkAKuFQu0c5YDRi0UEStZLCkCtkgJEStjBiGGfvtmZFGH5YcsG483ZwXXtDcuR9zuc+cc2ahj8AS0tnZGU5PT2FZFkzThGEY6HQ6aLfbaLVaqNfrODo6QqVSweHhIT7+NoPAZ5+zpzDDKiiG1T/3Yd3Y2GBP6Xg8DkVRsL6+jrW1NayurmJlZQWxWAzLy8tYWlpCNBrF4uIiwyrgEVhZlxdHVv/MsAqKYfXPDKugGFb/zLAKahpY5+fn2VOYYRXUNLBeu/YpewozrIJiWP0zwyoohtU/M6yCYlj9M8MqKIbVPzOsgmJY/TPDKiiG1T8zrIJiWP0zwyoohtU/M6yCukpYJek5NNvurQTYloFGUUVU/mRi/6u0tKXBtjVsSZdbe0uzYWvPx9olKYCoWkS9Y3b3ZnZQ/iMy1m/YDKug/IC1lXuISORLxH7LoUHr1Hbef6hX4Q8Nq7xZgG7rKKd/6O0ti/xOnPYcwbO/6+gUx8cwrILyA9bmXrx3Hcdec3Dtpz80rMpeE3Ynj/vn5vP2OGkMwyooXyNrUqNodILc3YB7X46qKDYMWNTHMprIP7kJmQ5fkpegFik6mXToTunw109j/YdLij4gNQ3FE9MFpTtHE4ZF7WYL+YOjPqxeCm8YFrVZMBqv8SQ8/kxm6zUOapPBk5RdN0u8q2XxsDfWew5P3nrenAyroHytWTv/YCdxvXtPfoSCrkNTHUADCCdLBFYFqVAAmwUdtl5B+s4XCIZTKBUIvtAzvNFt6FoK3wSvI5hIo0zXJ/s/DmA1Skj2wHEjn1HFy8QsZoLf42XVGMDjpHBdg0p9JfkmkiWCs/wCod48RjWDhLtGBlVjMqyOF+5nUXvnAG+ilX+MBfdFGI2sw/scgZU9nS/7t5bzh3aRh8sAOaxCc+DK/dyNnk/futFrWLbdxJ5Ch0uAHGcGda2iUC3o9j9G5tYg7d7NtWE3s1DOAyJ9h90GQVd41O87XAY8fWP1VhzInec2RUvbQGFzsMZFZYBnSZ5FIvkW/1IEH3lxvGcZ2mcfVtZ08rNmDREwhgukB+sofN0xFEHp4Kvbc6Ptbv8qtkPnYG3s4vYYrN3rNr0YXl9ZLY3Aah9ncIt+e/fdcUoWTbtNZUq33SkX1NL7YfV84YsztE+GVVD/xweWVf0dC6EXKBOUTlr/aoZSM6Xq9P6fdNhzSJUJJq8McNpTD6gMoLko4o6WARYau84X+Cggjn/N90oJKgOCN37Bq4aTrruwhlIVAohSc/JrzBCQzlz77pf8A+SdUqOcpjJgFjfuvaK6dDKsyk4R+fQ9xKgWj9xJQTuhSH7wmLLGHLarNKaWQdipp/v7TOE/7F37qp50nDoAAAAASUVORK5CYII=" InformativeScreenshot="47c105ac8c0e22af32d26d57bb662985.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="366, 89, 127, 15" ElementType="Text" FriendlyName="'DT ENCERRAMENTO FINAL'" FullSelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='LABEL' aaname='' check:innerText='DT ENCERRAMENTO FINAL' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIMAAAATCAYAAACz+74lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMHSURBVGhD7Zc9rioxDIXZEbuAJcAOWAEbYAG3hxpRU1NT0NJBT0lNm6cPcaIzZjJwdV/pTxolk9jHjsfDz6gkyYtshqSSzZBUshmSSjZDUslmSCq1GbbbbRmNRvWaTqflfr+X4/HYWfc9wZy1uI/mYrEoj8fjZVnK5XIpPz8/r7t3X+xvt1tTT2tc5AZojsfjur5arZ7rgvjo4i8UVxqO5x1jct/y5Vzn8/np6z7yUx5aI2dyj8Sa6PzoYz8U3/WYTyaTzhq+1Mefieg0g4sz92SHRFp7+/2+LJfLp7ZAT83Qlyy09DxHfObz+dPWNVVwPwv7s9ms2gMjdvIT8udiHusCyg8b6UF8GO4r3ViL35xf+r+Jz7mxFS1taDYDsCahIZHWHv40BA9BSTLqAeATY8KQnheXRkPPNQE7LiE/j0eMzWbzVkD2WVN8jymU33q9fo6i72HIl1EN5rDuGtA6v/S/iY8ve9frtdM0LW0YbAYv8pAIe/6xpkNL0wshTXxiZ4tPeoAOzeCawL2aRPfkjaYXnnvmh8OhrsmWAjIqpvLgQkO+jOSmnPxhgOfLnCvi5xDx/MpP+t/EZ1RNsJWNfD2e+G/N0LfnmkpImjoIY2RITwVSgwCa+s0Qv4fjGRRTMXz03BS/ry6+j48eJr4e232Zc0XcX7i+I/1v4ntsRuyhpQ0fvyZ0gCGR1p5rYqMuJmls/Q12Pumx7m8EGmgCNjo4MFcD6cLPY+icfcX2M4iYX/QX7svoeYm+9db5+/KDGJ99/2Th4p71ljY0m4F7CcCQSGsvajLnB5MeHPceA3++B/k38UkPH73l3gyAL3ZuI7ClCT2G7PSGca+9eAbwfWDElx9rrWbAhhisCWz/8gOyFZ+Y7DvE5WppQ6cZvJNI3B2GRNjzTtRHtRdDoOGJsh/9vtVjTp78nfNmwJ8frbvd7q0oKtzpdOqcx7X9rLEurPfVgvzig435Yk++0vIXwenTh1YzgMdnz+MC63oJvLaeQ22GJMlmSCrZDEklmyGpZDMkL0r5Bzj31HtX63O3AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD COOPERATIVA INICAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="000000" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="150, 114, 177, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='CD COOPERATIVA INICAL' /&gt;" Guid="4649e3ce-edf2-4bdb-81d5-7421564502ef" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAYCAYAAAC80byZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dLBCcAwEMCwTp3101cCfXSAMxJ4Az8bYkxNzp16rSWN7vhMDVOZmhxTk2NqckxNjqnJMTU5pibH1OSYmhxTk2NqckxNjqnJMTU5pibH1OSYmpzfqaXJHXdqqDA1MXu/6NAtzlkAZiEAAAAASUVORK5CYII=" InformativeScreenshot="6c68f0df912e6e85ac4267ec913c5552.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="11, 116, 120, 15" ElementType="Text" FriendlyName="'CD COOPERATIVA INICAL'" FullSelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='' check:innerText='CD COOPERATIVA INICAL' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHwAAAATCAYAAABSvGkxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKkSURBVGhD7Za9sSJBDITJiCwgBMiACHAxCAAfnwCIAIsE8CAHbNx99W29phqttEedd7fTVVPsaKTWTw+ws65hUmiCTwxN8ImhCT4xNMEnhib4xDAQfL/fd7PZrF/z+by73+/d6XR621jL5bJ7Pp+/EUNkHK/Xq9tsNgO7I+ZhL2Sc0c66Xq8DHmwOYheLRVqXFhwsYvHbbre9r8AzNq+DVeFwOPS+zI35xZr8HB7PNdZPlldcGd6Cq3EfsqDGBZ4zwSqOzE6shg44w0eNxhhvgs/1et0PJ2vO63VfgfPVajUYlMcB7anFxQU8kxvATQ44Yy1CFJTevKZ4rjlkggpV3mwmwltwGquI4yAAtuhfcWB3MQX5q/BYJHYNxpuAR3FZc15vFEuxj8djMPRKcD2zBD/jU+fu44iCHo/Hj1llgrOPvyyOKu9XgpPEm3VAFs8ghNhRccSCBDV0u93Sxlwsb4IcukDk1E+d/wWpDuUQt7hArDf2WfEgil8W1RZzOeQjQcUh/ngORzU3ocore4Z/RnC4Jay/Q2TNkUu+uhiC98InvELs0/dei8e5QO4TkQnKXn1n5+RnZRjL+5XgY+TeuJD5VxxxsILsFB9/XoHbqyYqweFmEP4tgofLossQL4/ihGzPombZ2TsfC1tEJigQZ3ZOjmxuYCzvV4JrGN7g+XzuAyGKjfughIqDbzCDV0EA3r99aXOMCQ6oSZcmGyC+yuFxIO7JwwuSXgKpMX6jPZ+jElwcevHy8zgDQD2Xy2U071eCA5z9G+CD8JsEsQqOqDhUvOzZhYl5fNhVEwzHY+BgeSzP5N7tdh92AKd+VmNc3KsHXRqPdXAe81SCA+y6/PFcOdUfZ3/Ky6fPxGv5ELzh/0cTfGJogk8MTfCJoQk+KXTdDzACA1fvDZQPAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD COOPERATIVA FINAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="999999" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="497, 114, 177, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl tableCol='6' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='CD COOPERATIVA FINAL' /&gt;" Guid="d282a8d0-d601-4037-8c84-a6d18446fb75" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAYCAYAAAC80byZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dLBCcAwEMCwTp31U/IJFLrAGQm8gZ8NMaYm50691pLGd3ymhslMTY6pyTE1OaYmx9TkmJocU5NjanJMTY6pyTE1OaYmx9TkmJocU5NjanJMTc7v1NL0jjs1VJiamL1frKUqmFsMlhoAAAAASUVORK5CYII=" InformativeScreenshot="6135ca62f2af205d4fd163568bc66ce2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="366, 116, 115, 15" ElementType="Text" FriendlyName="'CD COOPERATIVA FINAL'" FullSelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableCol='5' tableRow='4' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='LABEL' aaname='' check:innerText='CD COOPERATIVA FINAL' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAATCAYAAACqXJLGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK6SURBVGhD7Zc9bgIxEEa5EbeAI8ANOAEtBQegp+cU1PSIDnpKalpHb5Vv9Xmws0kZy09a7drzP+MNm1nqNEsfbsP04TZMH27D9OE2TB9uw2TDfb1eablcptlsNlybzSa93++03+/HPd8vUfMR93lmT6CDruTz+Tzd7/dB9lefnq/7EZfLZdSNPnShczgcBlue8elgRx7clfvpdPqW5sQYii3/khPHkVzwvFgsPvbQKzEOt2QoYhCKUIJOzUcpeW9wqTnuCx2aix6gxzruC8+XODoMApvVavUxjFin1sTRIAV+ZY8O/tbrdaYjpvKUPMYo9Z046Ark6JUYh4tBPDkiBgH0Y3NqPjSMCPtcpQEA+9jF5qigqaYBOt402Vyv17TdbjPbWKevsfHaXKYaoo6YylPy4/E43IXHwBbZ4/HI6kGOXolhuCjGU+N4EEERPtyffNSKVkM05AgxGcDz+Rz01BzZEIu3X3/udEA8X8UQyhs9fHtdsc6aH+WFDzWdXGIsEfOUjvwjlw9qwI/LgTtrQFc6vh/5N8MtNYdYPGvogr2oK7yWGDfW6Wuvz+2Qq7m1HtTylH+Xs9bBibmqh+obePzIMFwcxVPseBCBcx/YTz5iE4X2PVlH+7Xm/KZp/A4qJ+58YGnwXAxD9rHOuCbW+XzO6mTP/XF5X+AvwwX1xeV+uLn0vYIcvRLjby4JyQAIxG8A91KR3hRR86E3z4t2XfTw5weAeLUPKlHb93y5601Q0xzslVesM67RIyf5I358Uz2emMozyrnjg48n5MRF7qgW5PgpMQ4XcKKT4f9C4NhPTQzk1HxQAMOULB4OntmT3A9JrTnRp+LFodCE3W6XvXHCGzc1XMXTASk1XYOJdqX8a8MF9nW4kRHLYZ84t9st+2vkfc2G22mLPtyG6cNtmD7chunDbZaUvgDbmZ0rnNltHgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD UA INICIAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="0001" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="150, 140, 177, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl tableRow='7' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='CD UA INICIAL' /&gt;" Guid="36f143f4-6512-410f-9225-f7abb37694e1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAYCAYAAAC80byZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dLBCcAwEMCwTp3101cCfXSAMxJ4Az8bYkxNzp16rSWN7vhMDVOZmhxTk2NqckxNjqnJMTU5pibH1OSYmhxTk2NqckxNjqnJMTU5pibH1OT8Ti1N7rhTQ4WpyTE1MXu/yxoxBPtM/LUAAAAASUVORK5CYII=" InformativeScreenshot="474758cbadb9dd4920e6adf15defacaf.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="11, 142, 69, 15" ElementType="Text" FriendlyName="'CD UA INICIAL'" FullSelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='' tag='LABEL' class='' aaname='' check:innerText='CD UA INICIAL' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEkAAAATCAYAAADcZiBNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG3SURBVFhH7ZTBkcIwDEXTEV2QEqADKqCBFJACOFMARXDnShFMjrl652WRV4jvxKc9+c14ElvSt/wD7lJjk2ZSBc2kCppJFTSTKmgmVfBl0jAMqeu6Zex2u/R8PtP1es1rjL7v0+v1elf8Qe44ju/ZL9QyjPv9XqwHr0Hd6XRK8zwvc4hx9Axi9Gx9chb24ek1VA9Ry5NNQoSG/IGMKMC7GeipMYmGD4eD3Ae8xu12S+fz+SO3ZJI6OCiTVA9eK5JNIoFihRJgLeZvmWQNPx6P5fC+cSOagFHH43FZB2USOuhZjieaVOrBtBTZJApLSUpAGaLWqGUAGryvHUqZwLC/nYqzVjI9mlTqwbQU/2oSMd+UrXu8ht/X+lNx1mpNKvXg94pkk3xBRAmofNWs5RHzlyojXsqgTAAOSz7zGLcYz4g3aa0Hv1ckm4QYF59P5D5AOAowL12SXoO53SfUMDzq11syCXjf7/cyzrs3nb0vl8vyNJPWeoh7ebJJYIc0l02Qp3JfEb8WG5Or7iBiNOlZMwnIt5oY933aRzSTpmla7SGekbnxYVJD00yqoJlUQTOpgmbSJin9APFhNGRIZA2fAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD UA FINAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="9999" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="497, 140, 177, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl tableCol='6' tableRow='7' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='CD UA FINAL' /&gt;" Guid="9104e956-e988-4031-9216-694310b1386d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAYCAYAAAC80byZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dLBCcAwEMCwTp31U/IJFLrAGQm8gZ8NMaYm50691pLGd3ymhslMTY6pyTE1OaYmx9TkmJocU5NjanJMTY6pyTE1OaYmx9TkmJocU5NjanJ+p5amd9ypocLU5JiamL1f/EEtzsq/CPYAAAAASUVORK5CYII=" InformativeScreenshot="ed2bfb281f963a901996521a3dffad96.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="366, 142, 62, 15" ElementType="Text" FriendlyName="'CD UA FINAL'" FullSelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableCol='5' tableRow='7' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl id='ParametersGridReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='' class='' tag='LABEL' aaname='' check:innerText='CD UA FINAL' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEIAAAATCAYAAAAkhtu6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGaSURBVFhH7ZTBjYMwEEXpiC5ICaSDVJAGUgB37ikgRVBEikA55jqr5/VEP7M2ZG8rrZ9kYQ+jP+OPTWeNRDMi04zINCMyzYhMMyLzZsS6rnY4HKzrujROp5M9n0+7XC6vmMYj1+vVlmXJK0s55/PZ7vd7jljSYtRAQ2uxVl3msT760zTl1TelOuRoL8rLCBKGYSgmRgGawTCMU7RhiEaQfzwebRzHakNRAzR2u92SJjEHLTWiVucjI3AvNuCUBMjXZmDPCN6R46NE1ACNMccMNuq6PNWIWp1dI3CQ4xa/sFMS8GIKa91ENMJ1GMT1eDto+LXo+z7lqq7PGX5FyFEjanX+hBFoc4qIaTwSNaBkBPgpRseN2Kqza8RWY1ASKF0lmmQ4qktcf4IMzXV0o47GdO4fkLUbsVVn1whATH+AbGKe5/SMApgQ/9wQNViT93g8fhjtm/Bc5zdGAHN+8vRY+qBa5yMjAFF30e8nsHF1mHUN/SJuCjo0GI2rnaqtWOk9Ooy9Ojx1H6rzZsR/phmRaUZkmhGZZkTC7AuPVkI3EAVHtQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Exibir Relatório'" sap:VirtualizedContainerService.HintSize="538,166" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="785, 91, 83, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="Button" FriendlyName="'Exibir Relatório'" FullSelectorArgument="&lt;webctrl parentid='ParameterTable_ReportViewerControl_ctl04' tableCol='26' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ParameterTable_ReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Exibir Relatório' check:text='Exibir Relatório' /&gt;" Guid="b2e4f6ca-2dba-4222-a14d-8348a456ed7f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAYCAYAAACPxmHVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIYSURBVGhD7ZlBcsMgDEV9Ph8oS06RZMUBegafIwtu4SNQPkgguTiNqb3ojJj50xaE+HrIzkwzRRuXDYN74ahwX69XfDwe8Xa7mQb1fD4zRx4VLsCu62r6o+73OxEVcEG+F2w6JnDkYXBPlsG9UAaXtLgpuqW/NqrDcIOf4zRNVbMP3bh1cXGafQxriH52cenEoKDd/azg4yzOm9zSjyMF76IP/bWs5OvHmb05qeyhX8M7DcE9dsP7cD8SCqtAket9h43ADeGXCx7UCXB1wVjP5hMUl4sguOjkTbc3ECXG56di1nAUXJGffuec7XzOuURHazWn8FCeqs1c7c6tn5Rrc8G8513HD8FtZqgoAMhmkwk2reCm2GoORZdiNdwdoz86t4Fq8QUGwHQ7V+aQ+zAvHvdcW47b+mlw9aus1VL+1jqhc9u86joFV78W+MNj27ndV0cGwJfZ8iOHvGRek3BVI4hOZThYb6Agbo6tH4YLmNrnHg/of8ClrslniA7q+6CceNwptkEr8/8LLgDAFP+kOflaqHsQQwaPwoXaxSTQfJYQ51TgALoDV3ope/ny9uCW89uFAPbJrwX1OLovBa8eruC6ZI73NDMjcGVBOKv6IHgtJ+JozaXz60XQfI0X9dSYfbgqb9Je10KH4Zo+l8G9UAb3QhncC9WFa/8sP0fgyKPCxdcT+JoC5E1jAtju1zw2zh8G97IR4zdMgacvqZe71AAAAABJRU5ErkJggg==" InformativeScreenshot="640dcf2fb38a6631d2f294c78d038fd3.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:RetryScope DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="538,1272" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="3">
+              <ui:RetryScope.ActivityBody>
+                <ActivityAction>
+                  <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="496,1088" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="si:FileInfo" Name="downloadFile" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'SPAN ReportViewerContro…'" sap:VirtualizedContainerService.HintSize="434,166" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="WindowMessages" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="463, 178, 20, 20" DesignTimeScaleFactor="0.800000011920929" FriendlyName="'SPAN ReportViewerContro…'" FullSelectorArgument="&lt;webctrl aaname='Menu suspenso Exportar' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Menu suspenso Exportar' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='glyphui glyphui-save' aaname='' /&gt;" Guid="a6d3ad4b-620a-4519-9977-1d120945ddc6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADfSURBVEhL7ZQhDsMgFIa5RSWSIyA5AnKysnKyR6isrKxEViKRyB2hEskR/r0uTUuWNt1G5/oljz8hgY8AeQx/5hIcsi2IFpWQUJKDcUqldkqCMw5JKSqLOC9P2RYEA914wDdgU+7i0bCGRkptEObZlEtwgqDs4JzbqQ5llmC0aNv2oCzGnwUfkyGIvt849VQ9/PLxMwTBaKh6eLv7AbXSMMuOmQJNOwV7R/d4TREBRucIoqMT3mDGREC5PkuuYIJ+UKUEpChQCOo7lFyufUgUBUTak74WnMQlOOQSHAA8AaStTQU4oKJ9AAAAAElFTkSuQmCC" InformativeScreenshot="cfbc8fc50902b20cd5835dc1a069f43e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <ui:GetLastDownloadedFile IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Downloads&quot;)]" File="[downloadFile]" sap:VirtualizedContainerService.HintSize="434,553" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
+                      <ui:GetLastDownloadedFile.Body>
+                        <ActivityAction>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,288" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NClick ClickType="Single" DisplayName="Click 'Excel'" sap:VirtualizedContainerService.HintSize="338,166" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Version="V3">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="458, 248, 150, 24" DesignTimeScaleFactor="0.800000011920929" ElementType="Text" FriendlyName="'Excel'" FullSelectorArgument="&lt;webctrl idx='4' tableRow='15' tag='TABLE' /&gt;&lt;webctrl aaname='Excel' class='ActiveLink' tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Excel' class='ActiveLink' type='' tag='A' check:innerText='Excel' /&gt;" Guid="8beab6e1-7f51-403b-b75e-0fcafd12e72a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJoAAAAcCAYAAACZFqbSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEaSURBVHhe7djNjYMwEEBhd+iyXMQW4FJcAGfOLmPCeD3JBnHhx6OV/D6JGAzJ6QlDggADrevaRkLDUIQGF4QGF4QGF4QGFxpaCIHQMJaGtiwLoWEsQoMLQoMLQoMLQoMLQoOLc6HVLFH/C7EtZqn91FU1J8l3fwT/3vnQUukHzyC0OdwOraQg0UopSYKd13278x3M2XcIbQ73ls4WUJEU0vZZJUcd7bq+b3aRlhRbYIQ2h2eWzn6nslM1x89drtO5d6B90+sJbQ6uoe3nFKHN4YHQbOm0cXO0dLYYd3MbQpvDvWe0LZyfPy8DbXnsIX4tlUdzPTpCm8O50ICLCA0uCA0uCA0uNLT2bN6PgSEIDS40NEVoGOo3NJEXUEptSQ70UDIAAAAASUVORK5CYII=" InformativeScreenshot="e3e6e9e5044fddf2a30b11b5da783d8e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
+                              </uix:NClick.Target>
+                            </uix:NClick>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:GetLastDownloadedFile.Body>
+                    </ui:GetLastDownloadedFile>
+                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Documents&quot;)]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,167" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[downloadFile.FullName]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:RetryScope.ActivityBody>
+              <ui:RetryScope.Condition>
+                <ActivityFunc x:TypeArguments="x:Boolean" />
+              </ui:RetryScope.Condition>
+            </ui:RetryScope>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="538,101" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Arquivo Baixado&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="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" InformativeScreenshot="b31d26d7ae61468c2541ab20502ad6a3.jpg" Selector="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" Url="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
