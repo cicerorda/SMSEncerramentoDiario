@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GetFile" sap:VirtualizedContainerService.HintSize="799,5474" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GetFile" sap:VirtualizedContainerService.HintSize="1240,5465" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="56">
       <x:String>System.Activities</x:String>
@@ -69,11 +69,11 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="696,5409" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="696,5400" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -139,19 +139,19 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios" sap:VirtualizedContainerService.HintSize="634,3605" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios" sap:VirtualizedContainerService.HintSize="634,3596" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="600,3339" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="600,3370" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'DT ENCERRAMENTO INICIAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="538,226" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="[now.tostring(&quot;dd/MM/yyyy&quot;)]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="now.tostring(&quot;dd/MM/yyyy&quot;)" ClickBeforeMode="Double" DisplayName="Type Into 'DT ENCERRAMENTO INICIAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="538,257" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="[now.tostring(&quot;dd/MM/yyyy&quot;)]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="150, 86, 167, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl parentname='ParameterTable_ReportViewerControl_ctl04' tableCol='2' tableRow='1' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentname='ParameterTable_ReportViewerControl_ctl04' tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='DT ENCERRAMENTO INICIAL' /&gt;" Guid="85633334-62b4-4ed8-98b0-b4b04e79e953" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAYCAYAAACFtg3CAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dKxCcAwEMDATO31ncqGFOlfcAfaQM+GCLOScWdda0kjOz6zwjRmJcOsZJiVDLOSYVYyzEqGWckwKxlmJcOsZJiVDLOSYVYyzEqGWckwKxlmJeN3Vmlix50VpjMrEXu/sLSRbm7vqHcAAAAASUVORK5CYII=" InformativeScreenshot="0c6b9046a49263d0f3f4f8065ba3d1de.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -161,6 +161,11 @@
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
             <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'DT ENCERRAMENTO FINAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="538,226" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="[now.tostring(&quot;dd/MM/yyyy&quot;)]" Version="V3">
               <uix:NTypeInto.Target>
@@ -173,7 +178,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD COOPERATIVA INICAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="000000" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD COOPERATIVA INICAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="538,226" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="000000" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="150, 114, 177, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='CD COOPERATIVA INICAL' /&gt;" Guid="4649e3ce-edf2-4bdb-81d5-7421564502ef" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAYCAYAAAC80byZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dLBCcAwEMCwTp3101cCfXSAMxJ4Az8bYkxNzp16rSWN7vhMDVOZmhxTk2NqckxNjqnJMTU5pibH1OSYmhxTk2NqckxNjqnJMTU5pibH1OSYmpzfqaXJHXdqqDA1MXu/6NAtzlkAZiEAAAAASUVORK5CYII=" InformativeScreenshot="6c68f0df912e6e85ac4267ec913c5552.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -184,7 +189,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD COOPERATIVA FINAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="999999" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD COOPERATIVA FINAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="538,226" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="999999" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="497, 114, 177, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl tableCol='6' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='CD COOPERATIVA FINAL' /&gt;" Guid="d282a8d0-d601-4037-8c84-a6d18446fb75" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAYCAYAAAC80byZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dLBCcAwEMCwTp31U/IJFLrAGQm8gZ8NMaYm50691pLGd3ymhslMTY6pyTE1OaYmx9TkmJocU5NjanJMTY6pyTE1OaYmx9TkmJocU5NjanJMTc7v1NL0jjs1VJiamL1frKUqmFsMlhoAAAAASUVORK5CYII=" InformativeScreenshot="6135ca62f2af205d4fd163568bc66ce2.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -195,7 +200,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD UA INICIAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="0001" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD UA INICIAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="538,226" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="0001" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="150, 140, 177, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl tableRow='7' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='CD UA INICIAL' /&gt;" Guid="36f143f4-6512-410f-9225-f7abb37694e1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAYCAYAAAC80byZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dLBCcAwEMCwTp3101cCfXSAMxJ4Az8bYkxNzp16rSWN7vhMDVOZmhxTk2NqckxNjqnJMTU5pibH1OSYmhxTk2NqckxNjqnJMTU5pibH1OT8Ti1N7rhTQ4WpyTE1MXu/yxoxBPtM/LUAAAAASUVORK5CYII=" InformativeScreenshot="474758cbadb9dd4920e6adf15defacaf.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -206,7 +211,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD UA FINAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,226" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="9999" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Double" DisplayName="Type Into 'CD UA FINAL'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="538,226" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="DebuggerApi" ScopeIdentifier="e669ba68-dfff-4d73-a53f-9a363d5da8c7" Text="9999" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://db1report161p.sicredi.net:81/NEWCON/Pages/ReportViewer.aspx?/NEWCON4/RELATORIOS%2fFI%2fENCERRAMENTO_valores_a_disposicao&amp;rs:Command=Render&amp;rs:embed=true" DesignTimeRectangle="497, 140, 177, 20" DesignTimeScaleFactor="0.800000011920929" ElementType="InputBox" FriendlyName="'INPUT ReportViewerContr…'" FullSelectorArgument="&lt;webctrl tableCol='6' tableRow='7' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='null' aaname='CD UA FINAL' /&gt;" Guid="9104e956-e988-4031-9216-694310b1386d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAALUAAAAYCAYAAAC80byZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABmSURBVHhe7dLBCcAwEMCwTp31U/IJFLrAGQm8gZ8NMaYm50691pLGd3ymhslMTY6pyTE1OaYmx9TkmJocU5NjanJMTY6pyTE1OaYmx9TkmJocU5NjanJ+p5amd9ypocLU5JiamL1f/EEtzsq/CPYAAAAASUVORK5CYII=" InformativeScreenshot="ed2bfb281f963a901996521a3dffad96.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='ENCERRAMENTO_valores_a_disposicao - Visualizador de Relatórios' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -257,7 +262,7 @@
                         </ActivityAction>
                       </ui:GetLastDownloadedFile.Body>
                     </ui:GetLastDownloadedFile>
-                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), &quot;Documents&quot;)]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,167" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[downloadFile.FullName]" />
+                    <ui:MoveFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[&quot;\\nas01\consorcio\publico\Administradora de Consórcios\Controles Internos\IV - Estrutura Operacional\Área Técnica\Automação RPA\RPA SMS Rerrateio\Relatorio Rerrateio Grupos - &quot;+Now.ToString(&quot;ddMMyyyy&quot;)+&quot;.xlsx&quot;]" DisplayName="Move File" sap:VirtualizedContainerService.HintSize="434,167" sap2010:WorkflowViewState.IdRef="MoveFile_1" Overwrite="True" Path="[downloadFile.FullName]" />
                   </Sequence>
                 </ActivityAction>
               </ui:RetryScope.ActivityBody>
